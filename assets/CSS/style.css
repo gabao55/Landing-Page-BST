@@ -54,7 +54,6 @@ void bst_print_dot(tree* T) {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     gap: var(--gap);
-    overflow-x: hidden;
 }
 
 .intro-text-content {
