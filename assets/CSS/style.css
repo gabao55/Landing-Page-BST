@@ -395,17 +395,17 @@ void bst_print_dot(tree* T) {
     }
 
     h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     }
 
     h2 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         text-transform: uppercase;
     }
 
     h3 {
-        font-size: 4rem;
+        font-size: 3rem;
         text-transform: uppercase;
     }
 
