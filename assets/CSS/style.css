@@ -159,6 +159,10 @@ void bst_print_dot(tree* T) {
     font-size: 3rem;
 }
 
+.code .main-content .program-name-mobile:nth-child(1) {
+    margin-top: 3rem;
+}
+
 .code .main-content .program-code pre {
     display: flex;
     max-width: 80vw;
