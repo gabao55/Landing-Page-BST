@@ -1,0 +1,56 @@
+.menu {
+    position: fixed;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 0.2rem solid var(--light_grey_color);
+    z-index: 1;
+}
+
+.menu .menu-content {
+    padding-bottom: 0;
+    padding-top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu .menu-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu ul li a {
+    display: block;
+    color: inherit;
+    padding: 2rem;
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary_color);
+    transition: all 200ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
