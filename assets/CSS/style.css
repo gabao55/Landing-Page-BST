@@ -292,8 +292,8 @@ void bst_print_dot(tree* T) {
     bottom: 2rem;
     right: 2rem;
     background: var(--white_color);
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
