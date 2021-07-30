@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Landing Page</title>
+    <title>Binary Search Tree - BST</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +21,7 @@
 <aside class="menu white-bg">
     <div class="main-content menu-content">
         <h1 onclick="getElementById('close-menu').checked = false;">
-            <a href="#intro">Gabriel Salateo Rosin</a>
+            <a href="#intro">About me</a>
         </h1>
         <nav>
             <ul onclick="getElementById('close-menu').checked = false;">
@@ -34,27 +34,6 @@
         </nav>
     </div>
 </aside>
-<section class="intro main-bg section" id="intro">
-    <div class="main-content intro-content">
-        <div class="intro-text-content">
-            <h2>Intro</h2>
-            <p>This page was developed as a front-end project by Gabriel Salateo Rosin. It is a first contact
-                project with HTML, CSS and Javascript and it comes to explaining a little about a very used data
-                structure
-                called Binary Search Tree (BST), showing some methods involved by the structure, giving examples and
-                showing some code developed in C language for it by the site's developer.
-                <br>
-                In case you get interested by checking other data structures' code or by any of other Gabriel's
-                projects,
-                you can access his GitHub by clicking the photo!</p>
-        </div>
-        <a href="https://github.com/gabao55" target="_blank">
-            <div class="intro-img">
-                <img src="assets/img/foto_linkedin.jpg" alt="GitHub logo that directs to my GitHub page">
-            </div>
-        </a>
-    </div>
-</section>
 <section class="bst white-bg section" id="bst">
     <div class="main-content bst-content">
         <div class="bst-text-content">
@@ -87,8 +66,8 @@
 <section class="methods main-bg section" id="methods">
     <div class="main-content methods-content">
         <h2>Methods of a BST</h2>
-        <p>Basically there are three methods, add node, search node and remove node. You can find more about the methods
-            in the following video:</p>
+        <p>Basically there are three methods, insert, search and remove node. You can find more explanation more about
+            the methods in the following video:</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/wcIRPqTR3Kc" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -96,20 +75,24 @@
         <h2>Methods' costs</h2>
         <div class="methods-grid">
             <p>As mentioned in the introduction, a great advantage of binary search trees is the fact they are very
-                compact and easy to find data. You can check on the table bellow the cost of each method:</p>
+                compact and easy to find data, what makes its operations fast.
+                You can check on the table bellow the cost of each method:</p>
             <br>
             <div class="grid-content">
                 <article>
                     <h3>Insertion</h3>
-                    <p>The insertion cost is log (n) because of lajnfgaljsfnaslf</p>
+                    <p><span>The insertion cost in average is proportional to log<sub>2</sub>(n) and in worst case it is
+                        proportional to (n), in which n is the number of nodes</span></p>
                 </article>
                 <article>
                     <h3>Search</h3>
-                    <p>The insertion cost is log (n) because of lajnfgaljsfnaslf</p>
+                    <p><span>The insertion cost in average is proportional to log<sub>2</sub>(n) and in worst case it is
+                        proportional to (n), in which n is the number of nodes</span></p>
                 </article>
                 <article>
                     <h3>Removal</h3>
-                    <p>The insertion cost is log (n) because of lajnfgaljsfnaslf</p>
+                    <p><span>The insertion cost in average is proportional to log<sub>2</sub>(n) and in worst case it is
+                        proportional to (n), in which n is the number of nodes</span></p>
                 </article>
             </div>
         </div>
@@ -135,8 +118,8 @@
 typedef struct node {
     int key;
     struct node *parent; // ascendent in the tree
-    struct node *left; // left descendent in the tree
-    struct node *right; // right descendente in the tree
+    struct node *left; // left child in the tree
+    struct node *right; // right child in the tree
 } node;
 
 typedef struct tree {
@@ -694,7 +677,7 @@ int main() {
                     <div class="grid-div">
                         <h3>Arrays</h3>
                         <img src="https://2.bp.blogspot.com/-FQAQTLxRYaE/UFJd3dXglAI/AAAAAAAAAvo/mO2QtNSWTMs/s1600/Curso+Java+Progressivo+-+Arrays.jpg"
-                             alt="Array illustration image" target="_blank"
+                             alt="Array illustration image"
                         class="grid-image">
                     </div>
                 </a>
@@ -702,7 +685,7 @@ int main() {
                     <div class="grid-div">
                         <h3>Stacks</h3>
                         <img src="https://www.tutorialspoint.com/data_structures_algorithms/images/stack_representation.jpg"
-                             alt="Stack illustration image" target="_blank"
+                             alt="Stack illustration image"
                         class="grid-image">
                     </div>
                 </a>
@@ -710,7 +693,7 @@ int main() {
                     <div class="grid-div">
                         <h3>Queues</h3>
                         <img src="https://www.tutorialandexample.com/wp-content/uploads/2020/05/Queue-in-DS-1.jpg"
-                             alt="Queue illustration image" target="_blank"
+                             alt="Queue illustration image"
                         class="grid-image">
                     </div>
                 </a>
@@ -718,7 +701,7 @@ int main() {
                     <div class="grid-div">
                         <h3>Linked Lists</h3>
                         <img src="https://i.stack.imgur.com/jIGTL.png"
-                             alt="Linked list illustration image" target="_blank"
+                             alt="Linked list illustration image"
                         class="grid-image">
                     </div>
                 </a>
@@ -726,7 +709,7 @@ int main() {
                     <div class="grid-div">
                         <h3>Graphs</h3>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJQNGGnlL5AF0pWxxwtw2K8EAFhg3LB-eUcw&usqp=CAU"
-                             alt="Graphs illustration image" target="_blank"
+                             alt="Graphs illustration image"
                         class="grid-image">
                     </div>
                 </a>
@@ -734,7 +717,7 @@ int main() {
                     <div class="grid-div">
                         <h3>Hash Tables</h3>
                         <img src="https://linuxhint.com/wp-content/uploads/2020/07/1-66.png"
-                             alt="Hash table illustration image" target="_blank"
+                             alt="Hash table illustration image"
                         class="grid-image">
                     </div>
                 </a>
@@ -776,9 +759,28 @@ int main() {
         </div>
     </div>
 </section>
+<section class="intro main-bg section" id="intro">
+    <div class="main-content intro-content">
+        <div class="intro-text-content">
+            <h2>About me</h2>
+            <p>This page was developed as a front-end project. It is a first contact
+                project with HTML and CSS, it comes to explaining a little classic data structure
+                called Binary Search Tree (BST), showing some methods involved by the structure, giving examples and
+                showing some code developed in C language for it by me.
+                <br>
+                In case you get interested in checking other data structures' code or in viewing other of my
+                projects, you can access my GitHub by clicking the photo!</p>
+        </div>
+        <a href="https://github.com/gabao55" target="_blank">
+            <div class="intro-img">
+                <img src="assets/img/foto_linkedin.jpg" alt="Profile photo that directs to my GitHub page">
+            </div>
+        </a>
+    </div>
+</section>
 <footer id="footer" class="footer main-bg">
-    <p>Done with <span class="heart">♥</span> by <a href="https://github.com/gabao55" target="_blank">Gabriel Salateo Rosin</a></p>
+    <p>Made with <span class="heart">♥</span> by <a href="https://github.com/gabao55" target="_blank">Gabriel Salateo Rosin</a></p>
 </footer>
-<a class="back-to-top" href="#intro">➤</a>
+<a class="back-to-top" href="#bst">➤</a>
 </body>
 </html>
